@@ -15,5 +15,6 @@ htmlcov/
 
 logs/
 evals/results/
+data/processed/
 
 .DS_Store

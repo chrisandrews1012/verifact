@@ -1,6 +1,6 @@
 import pandas as pd
 
-from csv_autoclean.models import DataProfile, RepairReport, ValidationReport
+from verifact.models import DataProfile, RepairReport, ValidationReport
 
 _PCT_TOLERANCE = 0.5
 

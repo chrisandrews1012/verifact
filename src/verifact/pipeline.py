@@ -10,23 +10,23 @@ from rich.console import Console
 from rich.panel import Panel
 from rich.progress import Progress, SpinnerColumn, TextColumn
 
-from csv_autoclean.agents.profiler import run_profiler
-from csv_autoclean.agents.repairer import run_repairer
-from csv_autoclean.agents.reporter import run_reporter
-from csv_autoclean.agents.validator import run_validator
-from csv_autoclean.invariants import (
+from verifact.agents.profiler import run_profiler
+from verifact.agents.repairer import run_repairer
+from verifact.agents.reporter import run_reporter
+from verifact.agents.validator import run_validator
+from verifact.invariants import (
     InvariantViolation,
     assert_invariants,
     check_profile_invariants,
     check_repair_invariants,
     check_validation_invariants,
 )
-from csv_autoclean.models import PipelineContext
-from csv_autoclean.tools import load_dataframe
+from verifact.models import PipelineContext
+from verifact.tools import load_dataframe
 
 load_dotenv()
 console = Console()
-logger = logging.getLogger("csv_autoclean")
+logger = logging.getLogger("verifact")
 
 if not logger.handlers:
     Path("logs").mkdir(exist_ok=True)

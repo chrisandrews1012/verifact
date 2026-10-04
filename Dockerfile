@@ -12,4 +12,4 @@ RUN uv sync --no-dev
 
 EXPOSE 8000
 
-CMD ["uv", "run", "uvicorn", "csv_autoclean.server:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["uv", "run", "uvicorn", "verifact.server:app", "--host", "0.0.0.0", "--port", "8000"]

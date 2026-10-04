@@ -3,8 +3,8 @@ import time
 import pytest
 from fastapi.testclient import TestClient
 
-from csv_autoclean.jobs import create_job
-from csv_autoclean.server import app
+from verifact.jobs import create_job
+from verifact.server import app
 
 client = TestClient(app)
 
@@ -67,7 +67,7 @@ def test_run_end_to_end_completes_and_serves_report_and_download() -> None:
     assert response.status_code == 200
     job_id = response.json()["job_id"]
 
-    from csv_autoclean.jobs import get_job
+    from verifact.jobs import get_job
 
     for _ in range(120):
         job = get_job(job_id)

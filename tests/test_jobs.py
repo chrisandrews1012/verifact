@@ -1,4 +1,4 @@
-from csv_autoclean.jobs import (
+from verifact.jobs import (
     append_event,
     complete_job,
     create_job,

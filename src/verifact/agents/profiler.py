@@ -2,8 +2,8 @@ import pandas as pd
 from pydantic_ai import Agent
 from pydantic_ai.models.anthropic import AnthropicModel
 
-from csv_autoclean.models import ColumnMissingness, DataProfile, MissingnessReport
-from csv_autoclean.tools import (
+from verifact.models import ColumnMissingness, DataProfile, MissingnessReport
+from verifact.tools import (
     analyze_missingness,
     build_missingness_summary,
     get_column_stats,
