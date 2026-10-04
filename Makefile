@@ -1,10 +1,10 @@
 .PHONY: run serve test-fast test-llm eval data
 
 run:
-	uv run python -m csv_autoclean.pipeline data/raw/hr_messy.csv
+	uv run python -m verifact.pipeline data/raw/hr_messy.csv
 
 serve:
-	uv run uvicorn csv_autoclean.server:app --reload
+	uv run uvicorn verifact.server:app --reload
 
 test-fast:
 	uv run pytest -m "not llm"

@@ -1,4 +1,4 @@
-# csv-autoclean
+# verifact
 
 A four-agent LLM pipeline that cleans CSV files, built to demonstrate how
 to make a pipeline built on a non-deterministic model actually
@@ -89,7 +89,7 @@ make serve   # start the web interface locally
 To run on your own CSV:
 
 ```bash
-uv run python -m csv_autoclean.pipeline path/to/your/data.csv
+uv run python -m verifact.pipeline path/to/your/data.csv
 ```
 
 **Docker**
@@ -127,7 +127,7 @@ means and why it matters. Results are written to
 ## File structure
 
 ```
-csv-autoclean/
+verifact/
 ├── .github/
 │   └── workflows/
 │       └── ci.yml
@@ -149,7 +149,7 @@ csv-autoclean/
 │   │   └── medical_expected.json
 │   └── runner.py
 ├── src/
-│   └── csv_autoclean/
+│   └── verifact/
 │       ├── agents/
 │       │   ├── profiler.py
 │       │   ├── validator.py

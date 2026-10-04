@@ -3,8 +3,8 @@ import pandas as pd
 from pydantic_ai import Agent
 from pydantic_ai.models.anthropic import AnthropicModel
 
-from csv_autoclean.models import DataProfile, RepairAction, RepairReport
-from csv_autoclean.tools import (
+from verifact.models import DataProfile, RepairAction, RepairReport
+from verifact.tools import (
     clean_numeric_string,
     count_non_standard_dates,
     detect_case_inconsistency,

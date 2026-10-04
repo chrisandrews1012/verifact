@@ -14,9 +14,9 @@ import json
 import sys
 from pathlib import Path
 
-from csv_autoclean.invariants import InvariantViolation
-from csv_autoclean.models import DataProfile, RepairReport
-from csv_autoclean.pipeline import run_pipeline
+from verifact.invariants import InvariantViolation
+from verifact.models import DataProfile, RepairReport
+from verifact.pipeline import run_pipeline
 
 REPO_ROOT = Path(__file__).parent.parent
 

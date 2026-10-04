@@ -1,14 +1,14 @@
 import pandas as pd
 import pytest
 
-from csv_autoclean.invariants import (
+from verifact.invariants import (
     InvariantViolation,
     assert_invariants,
     check_profile_invariants,
     check_repair_invariants,
     check_validation_invariants,
 )
-from csv_autoclean.models import (
+from verifact.models import (
     ColumnProfile,
     DataProfile,
     RepairAction,

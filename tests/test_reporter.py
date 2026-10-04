@@ -2,8 +2,8 @@ from pathlib import Path
 
 import pytest
 
-from csv_autoclean.agents.reporter import build_reporter_prompt, run_reporter
-from csv_autoclean.models import (
+from verifact.agents.reporter import build_reporter_prompt, run_reporter
+from verifact.models import (
     ColumnProfile,
     DataProfile,
     PipelineContext,

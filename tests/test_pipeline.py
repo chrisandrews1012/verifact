@@ -3,7 +3,7 @@ from pathlib import Path
 import pandas as pd
 import pytest
 
-from csv_autoclean.pipeline import (
+from verifact.pipeline import (
     DEFAULT_INPUT_PATH,
     resolve_input_path,
     run_pipeline,

@@ -1,4 +1,4 @@
-from csv_autoclean.models import (
+from verifact.models import (
     ColumnMissingness,
     ColumnProfile,
     DataProfile,
