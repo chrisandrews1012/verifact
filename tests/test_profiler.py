@@ -3,7 +3,7 @@ from pathlib import Path
 import pandas as pd
 import pytest
 
-from csv_autoclean.agents.profiler import (
+from verifact.agents.profiler import (
     build_missingness_report,
     build_profiler_prompt,
     extract_dataset_name,

@@ -1,11 +1,3 @@
-from csv_autoclean.models import (
-    ColumnMissingness,
-    ColumnProfile,
-    DataProfile,
-    MissingnessReport,
-    RepairAction,
-    RepairReport,
-)
 from evals.runner import (
     _score_column_types,
     _score_known_facts,
@@ -13,6 +5,14 @@ from evals.runner import (
     _score_no_false_positives,
     _score_repair_coverage,
     _score_unresolved_coverage,
+)
+from verifact.models import (
+    ColumnMissingness,
+    ColumnProfile,
+    DataProfile,
+    MissingnessReport,
+    RepairAction,
+    RepairReport,
 )
 
 

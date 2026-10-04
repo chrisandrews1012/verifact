@@ -1,7 +1,7 @@
 from pydantic_ai import Agent
 from pydantic_ai.models.anthropic import AnthropicModel
 
-from csv_autoclean.models import DataProfile, ValidationReport
+from verifact.models import DataProfile, ValidationReport
 
 SYSTEM_PROMPT = """
 You are a data validation agent. You receive a data profile where each

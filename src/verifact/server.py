@@ -11,7 +11,7 @@ from fastapi import FastAPI, HTTPException, UploadFile
 from fastapi.background import BackgroundTasks
 from fastapi.responses import FileResponse, HTMLResponse, StreamingResponse
 
-from csv_autoclean.jobs import (
+from verifact.jobs import (
     append_event,
     complete_job,
     create_job,
@@ -19,7 +19,7 @@ from csv_autoclean.jobs import (
     get_job,
     set_running,
 )
-from csv_autoclean.pipeline import run_pipeline
+from verifact.pipeline import run_pipeline
 
 app = FastAPI()
 _executor = ThreadPoolExecutor(max_workers=4)

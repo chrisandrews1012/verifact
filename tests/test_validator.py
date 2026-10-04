@@ -1,7 +1,7 @@
 import pytest
 
-from csv_autoclean.agents.validator import build_validator_prompt, run_validator
-from csv_autoclean.models import ColumnProfile, DataProfile
+from verifact.agents.validator import build_validator_prompt, run_validator
+from verifact.models import ColumnProfile, DataProfile
 
 
 def _column_profile(name: str, inferred_type: str) -> ColumnProfile:

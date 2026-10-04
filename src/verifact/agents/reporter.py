@@ -3,7 +3,7 @@ import os
 from pydantic_ai import Agent
 from pydantic_ai.models.anthropic import AnthropicModel
 
-from csv_autoclean.models import PipelineContext
+from verifact.models import PipelineContext
 
 SYSTEM_PROMPT = """
 You are a data quality reporter. You receive a complete pipeline context

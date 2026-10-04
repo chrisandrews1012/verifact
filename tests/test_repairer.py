@@ -3,8 +3,8 @@ from pathlib import Path
 import pandas as pd
 import pytest
 
-from csv_autoclean.agents.repairer import apply_repairs, run_repairer
-from csv_autoclean.models import (
+from verifact.agents.repairer import apply_repairs, run_repairer
+from verifact.models import (
     ColumnMissingness,
     ColumnProfile,
     DataProfile,

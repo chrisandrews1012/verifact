@@ -2,7 +2,7 @@ from pathlib import Path
 
 import pandas as pd
 
-from csv_autoclean.tools import (
+from verifact.tools import (
     analyze_missingness,
     build_missingness_summary,
     clean_numeric_string,
